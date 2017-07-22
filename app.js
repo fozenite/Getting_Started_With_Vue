@@ -144,3 +144,31 @@
 //     }
 //   }
 // });
+
+// Exercise 9 - Using Computed Values and Watch Exercise
+// new Vue({
+//   el: '#exercise',
+//   data: {
+//     value: 0,
+//     timeoutVal: 5000
+//   },
+//   methods: {
+//     changeTimeout: function(event) {
+//       this.timeoutVal = event.target.value * 1000;
+//     }
+//   },
+//   computed: {
+//     result: function(){
+//       return this.value < 37 ? 'not there yet' : 'done'
+//     }
+//   },
+//   watch: {
+//     value: function() {
+//       vm = this;
+//       setTimeout(function(){
+//         vm.value = 0;
+//       }, vm.timeoutVal)
+
+//     }
+//   }
+// })
