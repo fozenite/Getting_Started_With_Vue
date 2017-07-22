@@ -80,4 +80,25 @@
 //   }
 // })
 
+// Exercise 6 - Reacting to changes with 2 way properties
+// new Vue({
+//   el: '#app',
+//   data: {
+//     counter: 0,
+//     secondCounter: 0
+//   },
+//   computed: {
+//     output: function(){
+//       console.log('Computed');
+//       return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
+//     }
+//   },
+//   methods: {
+//     result: function(){
+//       console.log('Method');
+//       return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
+//     }
+//   }
+
+// })
 
