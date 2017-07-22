@@ -55,22 +55,29 @@
 
 //   }
 // })
-  // Exercise 4 -
-new Vue ({
-  el: '#exercise',
-  data: {
-    value: ''
-  },
-  methods: {
-    showAlert: function(){
-      alert('Clicked!');
-    },
-    storeValue: function(event){
-      this.value = event.target.value;
-    }
+  // Exercise 4 - Events Exercise
+// new Vue ({
+//   el: '#exercise',
+//   data: {
+//     value: ''
+//   },
+//   methods: {
+//     showAlert: function(){
+//       alert('Clicked!');
+//     },
+//     storeValue: function(event){
+//       this.value = event.target.value;
+//     }
 
-  }
-})
+//   }
+// })
 
+// Exercise 5 - 2 Way Binding
+// new Vue({
+//   el:'#app',
+//   data: {
+//     name:'Rohit'
+//   }
+// })
 
 
