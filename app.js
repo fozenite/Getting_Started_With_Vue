@@ -59,10 +59,15 @@
 new Vue ({
   el: '#exercise',
   data: {
-    value: '';
+    value: ''
   },
   methods: {
-
+    showAlert: function(){
+      alert('Clicked!');
+    },
+    storeValue: function(event){
+      this.value = event.target.value;
+    }
 
   }
 })
