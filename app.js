@@ -208,53 +208,61 @@
 // });
 
 // Exercise 12 - CSS Assignment
+// new Vue({
+//   el: '#exercise',
+//   data: {
+//     effect: '',
+//     greenHulk: 'greenHulk',
+//     bat: 'bat',
+//     selectClass: 'Type class here',
+//     selectClass_B:'Type class here',
+//     addOnClass : 'false',
+//     selectStyles : 'none',
+//     width: 0,
+//     height: 30
+//   },
+//   computed: {
+//     divClasses: function() {
+//       return this.addOnClass === 'true' ? 'bat' : '';
+//     },
+//     divSelectStyles: function() {
+//      return this.selectStyles === 'bright' ?
+//         {
+//           backgroundColor: 'yellow',
+//           width: '50px',
+//           height: '20px'
+//         }
+//       : '';
+//     },
+//     progressBar: function() {
+//       return {
+//         backgroundColor: 'blue',
+//         width: this.width + 'px',
+//         height: this.height + 'px'
+//       }
+//     }
+//   },
+//   methods: {
+//     startEffect: function() {
+//     vm = this;
+//     console.log(vm.effect);
+//       setInterval(function() {
+//         vm.effect !== 'highlight' ? vm.effect = 'highlight' : vm.effect = 'shrink';
+//       },5000);
+//     },
+//     startProgress: function() {
+//       vm = this;
+//       setInterval(function(){
+//         vm.width < 100 ? vm.width += 10 : null;
+//         },2000)
+//     }
+//   }
+// });
+
+// Exercise 13 - Conditional Rendering
 new Vue({
-  el: '#exercise',
+  el: '#app',
   data: {
-    effect: '',
-    greenHulk: 'greenHulk',
-    bat: 'bat',
-    selectClass: 'Type class here',
-    selectClass_B:'Type class here',
-    addOnClass : 'false',
-    selectStyles : 'none',
-    width: 0,
-    height: 30
-  },
-  computed: {
-    divClasses: function() {
-      return this.addOnClass === 'true' ? 'bat' : '';
-    },
-    divSelectStyles: function() {
-     return this.selectStyles === 'bright' ?
-        {
-          backgroundColor: 'yellow',
-          width: '50px',
-          height: '20px'
-        }
-      : '';
-    },
-    progressBar: function() {
-      return {
-        backgroundColor: 'blue',
-        width: this.width + 'px',
-        height: this.height + 'px'
-      }
-    }
-  },
-  methods: {
-    startEffect: function() {
-    vm = this;
-    console.log(vm.effect);
-      setInterval(function() {
-        vm.effect !== 'highlight' ? vm.effect = 'highlight' : vm.effect = 'shrink';
-      },5000);
-    },
-    startProgress: function() {
-      vm = this;
-      setInterval(function(){
-        vm.width < 100 ? vm.width += 10 : null;
-        },2000)
-    }
+    show: true
   }
 });
