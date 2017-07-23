@@ -259,10 +259,22 @@
 //   }
 // });
 
-// Exercise 13 - Conditional Rendering
+// // Exercise 13 - Conditional Rendering  v-if and v-show
+// new Vue({
+//   el: '#app',
+//   data: {
+//     show: true
+//   }
+// });
+
+// Exercise 14 - Conditional Rendering with v-for
 new Vue({
   el: '#app',
   data: {
-    show: true
+    ingredients: ['meat', 'fruit', 'cookies'],
+    persons: [
+      {name: 'Max', age: 27, color: 'red'},
+      {name: 'Anna', age: 'unknown', color: 'blue'}
+    ]
   }
 });
